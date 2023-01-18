@@ -28,3 +28,14 @@ This would click on the button with the id "submit-button" on the web page.
 
 Note: you can use different locators like xpath, css, classname, etc. It depends on the way the button is identified in the website HTML.
 
+public void enter_text(String elementId, String text) {
+    WebElement element = driver.findElement(By.id(elementId));
+    element.clear();
+    element.sendKeys(text);
+}
+public void enter_text(WebDriver driver,String elementId, String text) {
+    WebElement element = driver.findElement(By.id(elementId));
+    element.clear();
+    element.sendKeys(text);
+}
+This code uses the Selenium WebDriver's findElement() method to locate the element on the web page by its id, the clear() method to clear any pre-existing text in the element, and the sendKeys() method to enter the specified text. The elementId variable passed in as a parameter is the id of the element that the script should enter text into, and the text variable is the text that should be entered.
