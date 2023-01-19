@@ -40,11 +40,12 @@ Step 7: Continuously update and maintain the keyword-driven framework library as
 Detail implementation of keyword for the keyword-driven framework library for automation functional testing of web applications using Selenium and Java.
 
 
-navigate_to_page:
+> navigate_to_page:
 
 public void navigate_to_page(String url) {
     driver.get(url);
 }
+
 or
 
 
