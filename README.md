@@ -42,37 +42,37 @@ Detail implementation of keyword for the keyword-driven framework library for au
 
 > navigate_to_page:
 
-public void navigate_to_page(String url) {
-    driver.get(url);
-}
+> public void navigate_to_page(String url) {
+>     driver.get(url);
+> }
 
 or
 
+> public void navigate_to_page(WebDriver driver,String url) {
+>     driver.get(url);
+> }
 
-public void navigate_to_page(WebDriver driver,String url) {
-    driver.get(url);
-}
 This code uses the Selenium WebDriver's get() method to navigate to the specified URL. The url variable passed in as a parameter is the target URL that the script should navigate to. The driver variable is an instance of the Selenium WebDriver class, which is used to interact with the web application being tested.
 
 This keyword could be used in a test script like this:
 
-
 navigate_to_page("https://www.google.com");
 This would navigate the web driver to the google homepage.
 
-click_button:
+> click_button:
 
-public void click_button(String buttonId) {
-    WebElement button = driver.findElement(By.id(buttonId));
-    button.click();
-}
+> public void click_button(String buttonId) {
+>     WebElement button = driver.findElement(By.id(buttonId));
+>     button.click();
+> }
 or
 
 
-public void click_button(WebDriver driver,String buttonId) {
-    WebElement button = driver.findElement(By.id(buttonId));
-    button.click();
-}
+> public void click_button(WebDriver driver,String buttonId) {
+>     WebElement button = driver.findElement(By.id(buttonId));
+>     button.click();
+> }
+
 This code uses the Selenium WebDriver's findElement() method to locate the button on the web page by its id, and the click() method to simulate a click on the button. The buttonId variable passed in as a parameter is the id of the button that the script should click on.
 
 This keyword could be used in a test script like this:
